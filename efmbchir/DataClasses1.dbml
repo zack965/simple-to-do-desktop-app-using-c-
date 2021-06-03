@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="efmbchir" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-RKVCGVV;Initial Catalog=efmbchir;Integrated Security=True" SettingsObjectName="efmbchir.Properties.Settings" SettingsPropertyName="efmbchirConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.missions" Member="missions">
+    <Type Name="missions">
+      <Column Name="mission_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="mission_user_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="mission_name" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="mission_description" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="mission_date_time" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="mission_id_difficulty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
